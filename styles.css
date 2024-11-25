@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8; /* Un color de fondo suave y claro */
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -137,6 +138,14 @@ header .opciones a:hover {
 
 .tituloProyectos{
     text-align: center;
+}
+
+.tituloProyectos h2{
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+
 }
 
 .contenido {
@@ -302,7 +311,7 @@ header .opciones a:hover {
     padding: 15px 20px;
     
     bottom: 0;
-    width: 100%;
+    width: 98%;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
