@@ -1,0 +1,381 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Un color de fondo suave y claro */
+}
+
+/* NAVBAR */
+.header {
+    width: 98%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #0066cc; /* Azul más suave y armonioso */
+    position: fixed;
+    z-index: 1000;
+}
+
+header .logo{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+
+}
+
+header .logo img {
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+header .opciones {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header .opciones a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .opciones a:hover {
+    color: #f4b400; /* Color dorado suave al pasar el cursor */
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 150px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .sobreMi {
+    width: 500px;
+    background-color: #fafafa; /* Fondo blanco para resaltar el texto */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main p {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Tecnologías */
+.Tecnologias {
+    padding: 100px 50px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.Tecnologias h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.principales,
+.secundarios {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.html img,
+.css img,
+.JS img,
+.php img,
+.cSharp img,
+.java img,
+.bootstrap img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.html img:hover,
+.css img:hover,
+.JS img:hover,
+.php img:hover,
+.cSharp img:hover,
+.java img:hover,
+.bootstrap img:hover {
+    transform: scale(1.1); /* Efecto de aumento en hover */
+}
+
+/* PROYECTOS */
+.proyectos {
+    padding: 100px 50px;
+}
+
+.tituloProyectos{
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido .cont1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-10px); /* Efecto de levitar al pasar el cursor */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.cards:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-front {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-front img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card-back {
+    background-color: #0066cc; /* Azul de la cara posterior */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
+.card-back .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #f4b400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.card-back .btn:hover {
+    background-color: #ff9800;
+}
+
+/* CONTACTAME */
+.contactame {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #aaa;
+}
+
+.btn-enviar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Foto Frontal */
+.foto-frontal {
+    width: 250px; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene las proporciones */
+    border: 5px solid #ffffff; /* Borde blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    object-fit: cover; /* Ajusta el contenido para evitar deformaciones */
+    display: block; /* Centra la imagen si el contenedor tiene text-align */
+    margin: 0 auto; /* Alinea la imagen al centro dentro del contenedor */
+}
+
+/* Estilo adicional para centrar el contenedor de la imagen */
+.miFoto {
+    text-align: center; /* Centra la imagen dentro de este div */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.correo a{
+    text-decoration: none;
+}
+
+/* Modal correo copiado */
+#modal-copiado {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modal-copiado.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+    .header {
+        padding: 0px 10px;
+    }
+
+    .cards {
+        width: 250px;
+        height: 350px;
+    }
+
+    .card-front img {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        
+            <div class="logo">
+                <img src="img/Logo2.png" alt="LOGO">
+            </div>
+            <nav class="opciones">
+                <a href="#">Sobre mí</a>
+                <a href="#tecnologia">Tecnologias</a>
+                <a href="#proyecto">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+    </header>
+    <section class="main">
+        <div class="sobreMi">
+            <h2>Hola, soy Jose Luis Rodriguez Alarcon</h2>
+            <p>Soy estudiante de la carrera de Computación e Informática, con alta capacidad de resolución de problemas complejos relacionados con la especialidad, buen nivel de análisis y pensamiento crítico, capacidad de trabajo en equipo, liderazgo, negociación y vocación de servicio hacia el cliente, tanto interno como externo.</p>
+        </div>
+        
+        <div class="barra"></div>
+        <div class="miFoto">
+            <img src="img/FotoFrontal2.png" alt="fotoCarnet">
+        </div>
+    </section>
+    <section class="Tecnologias" id="tecnologia">
+        <h2>Tecnologías</h2>
+        <div class="LogosTec">
+            <div class="principales">
+                <div class="html">
+                    <img src="img/logos/html.png" alt="">
+                </div>
+                <div class="css">
+                    <img src="img/logos/css.png" alt="">
+                </div>
+                <div class="JS">
+                    <img src="img/logos/JavaScript.png" alt="">
+                </div>
+            </div>
+            <div class="secundarios">
+                <div class="php">
+                    <img src="img/logos/phpLogo.svg" alt="">
+                </div>
+                <div class="cSharp">
+                    <img src="img/logos/c.svg" alt="">
+                </div>
+                <div class="java">
+                    <img src="img/logos/java.png" alt="">
+                </div>
+                <div class="bootstrap">
+                    <img src="img/logos/bootstrapLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="proyectos" id="proyecto">
+        <div class="tituloProyectos">
+            <h2>Proyectos</h2>
+        </div>
+        <div class="contenido">
+            <div class="cont1">
+                <div class="cards">
+                    <div class="card-inner">
+                        <!-- Cara frontal -->
+                        <div class="card-front">
+                            <img src="img/FoodBurguers/FoodBurguers.png" alt="Food Burguers">
+                            <h2>Food Burguers</h2>
+                        </div>
+                        <!-- Cara posterior -->
+                        <div class="card-back">
+                            <h3>¡Visita el proyecto!</h3>
+                            <a href="https://example.com" target="_blank" class="btn">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-inner">
+                        <!-- Cara frontal -->
+                        <div class="card-front">
+                            <img src="img/Lycors/lycors1.png" alt="Food Burguers">
+                            <h2>LYCORS</h2>
+                        </div>
+                        <!-- Cara posterior -->
+                        <div class="card-back">
+                            <h3>¡Visita el proyecto!</h3>
+                            <a href="https://example.com" target="_blank" class="btn">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-inner">
+                        <!-- Cara frontal -->
+                        <div class="card-front">
+                            <img src="img/ProFreeCodeCamp/ProyectosFreeCodeCampo2.png" alt="Food Burguers">
+                            <h2>Proyectos FreeCodeCamp</h2>
+                        </div>
+                        <!-- Cara posterior -->
+                        <div class="card-back">
+                            <h3>¡Visita el proyecto!</h3>
+                            <a href="https://example.com" target="_blank" class="btn">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+    <section id="contacto" class="contactame">
+        <div class="contact-container">
+          <div class="form-container">
+            <h2>Contáctame</h2>
+            <span class="correo">
+                Mi correo: <a id="correo" href="javascript:void(0)">jrodricon25@gmail.com</a>
+            </span>
+            <div id="modal-copiado" class="modal-oculto">¡Correo copiado al portapapeles!</div>
+            <form action="#" method="post">
+              <label for="nombre">Tu nombre *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+      
+              <label for="email">Tu email *</label>
+              <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+      
+              <label for="mensaje">Tu mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+      
+              <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <!-- Reemplaza 'logo.png' con la ruta a tu logo -->
+            <img src="img/Logo2.png" alt="Logo de JlraDev" />
+          </div>
+          <p>JlraDev - Derechos Reservados © 2024</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
